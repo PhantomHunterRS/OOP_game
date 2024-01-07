@@ -7,7 +7,6 @@ public class Vector2 {
         this.posX = posX;
         this.posY = posY;
     }
-
     public int getPosX() {
         return posX;
     }
@@ -22,5 +21,8 @@ public class Vector2 {
 
     public void setPosY(int posY) {
         this.posY = posY;
+    }
+    public int distance (Vector2 vectorEnd){
+        return (Math.abs(vectorEnd.getPosX() - this.getPosX()))+ (Math.abs(vectorEnd.getPosY() - this.getPosY()));
     }
 }

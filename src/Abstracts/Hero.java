@@ -117,7 +117,7 @@ public class Hero implements Actable {
         if (team.equals("GOOD")){
             return new Vector2(0,good++);
         }else {
-            return new Vector2(10,evil++);
+            return new Vector2(9,evil++);
         }
     }
 

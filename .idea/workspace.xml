@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69c701c8-8331-4cd3-9f11-8f897b3b72dc" name="Changes" comment="in process 2">
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/AccurateShooting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/CarryingAWeapons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/Healing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/Vector2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstracts/SearchForTheNearestEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Actable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Actable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Crossbowman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Crossbowman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Monk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Peasant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/AccurateShooting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/AccurateShooting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Vector2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sniper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Spearman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +88,7 @@
       <updated>1703448724411</updated>
       <workItem from="1703448725588" duration="956000" />
       <workItem from="1704561183527" duration="4724000" />
-      <workItem from="1704654962451" duration="6657000" />
+      <workItem from="1704654962451" duration="10299000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1703448812785</created>
@@ -127,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704562716095</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="in process 2">
+      <created>1704661903872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704661903872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
