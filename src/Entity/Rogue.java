@@ -1,15 +1,12 @@
 package Entity;
 
-public class Rogue extends Hero implements Actable{
+import Abstracts.Actable;
+import Abstracts.Hero;
+
+public class Rogue extends Hero {
     public Rogue(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
     }
-
-    @Override
-    public void attack(Hero hero) {
-
-    }
-
     public void moving(Hero hero) {
 
     }
@@ -21,7 +18,7 @@ public class Rogue extends Hero implements Actable{
 
     @Override
     public String toString(){
-        return super.toString()+":\n   Health - " + getHealth() + "\n   Power - " + getPower() + "\n   Defence - " + getDefence() + "\n   Accuracy - " + getAccuracy() +
-                "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack();
+        return super.toString()+ " team - "+ getTeam() + ":\n   Health - " + getHealth() + "\n   Power - " + getPower() + "\n   Defence - " + getDefence() + "\n   Accuracy - " + getAccuracy() +
+                "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+ "\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
     }
 }
