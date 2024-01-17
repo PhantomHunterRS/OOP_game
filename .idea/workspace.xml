@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69c701c8-8331-4cd3-9f11-8f897b3b72dc" name="Changes" comment="in process 2">
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/SearchForTheNearestEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstracts/AccurateShooting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/AccurateShooting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstracts/Archery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Abstracts/Magic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/AccurateShooting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Actable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Healing.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Abstracts/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstracts/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Vector2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Move.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sniper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,6 +38,16 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="in process 2&#10;&#10;in process 1" />
+        <option name="rewordedMessage" value="in process 1.2" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="89807da1b67b91ffb4a6d52d4b7ddd09903adee7" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,6 +101,7 @@
       <workItem from="1703448725588" duration="956000" />
       <workItem from="1704561183527" duration="4724000" />
       <workItem from="1704654962451" duration="10299000" />
+      <workItem from="1705516948129" duration="1794000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1703448812785</created>
@@ -130,6 +143,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
