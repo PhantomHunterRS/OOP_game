@@ -2,11 +2,13 @@ package Entity;
 
 import Abstracts.Hero;
 import Abstracts.Magic;
+import Abstracts.Vector2;
 
 public class Wizard extends Magic {
 
     public Wizard(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
+        this.initiative = 1;
     }
     @Override
     public String toString() {
@@ -26,5 +28,10 @@ public class Wizard extends Magic {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public void step(Vector2 vector) {
+        super.step(vector);
     }
 }

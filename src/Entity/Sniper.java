@@ -13,6 +13,7 @@ public class Sniper extends Archery {
     public Sniper(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
         this.numberOfArrows = 15;
+        this.initiative = 3;
     }
     public int getNumberOfArrows() {
         return numberOfArrows;
@@ -54,5 +55,10 @@ public class Sniper extends Archery {
     public String toString() {
         return super.toString()+ " team - "+ getTeam() + ":\n   Health - " + getHealth() + "\n   Power - " + getPower() + "\n   Defence - " + getDefence() + "\n   Accuracy - " + getAccuracy() +
                 "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n   number Of Arrows - " + getNumberOfArrows()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
+    }
+
+    @Override
+    public void step(Vector2 vector) {
+        super.step(vector);
     }
 }

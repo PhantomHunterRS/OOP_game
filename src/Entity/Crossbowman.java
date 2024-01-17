@@ -1,11 +1,13 @@
 package Entity;
 
 import Abstracts.Hero;
+import Abstracts.Vector2;
 
 public class Crossbowman extends Hero {
     private int numberOfCrossBowArrows;
     public Crossbowman(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
+        this.initiative = 3;
     }
     @Override
     public String toString() {
@@ -18,5 +20,10 @@ public class Crossbowman extends Hero {
     }
     public void setNumberOfCrossBowArrows(int replenishNumberOfCrossBowArrows) {
         this.numberOfCrossBowArrows = this.numberOfCrossBowArrows+replenishNumberOfCrossBowArrows;
+    }
+
+    @Override
+    public void step(Vector2 vector) {
+        super.step(vector);
     }
 }

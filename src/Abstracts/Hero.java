@@ -4,6 +4,10 @@ package Abstracts;
 Описание героя и его основных характиристик
  */
 public abstract class Hero implements Move {
+    private static boolean toggleSwitch = true;
+    private static int good = 0;
+    private static int evil = 0;
+
     String name;
     private String team;
     private int health, health_Max;
@@ -13,9 +17,7 @@ public abstract class Hero implements Move {
     private int chanceCriticalAttack;
     private int evasionAttack;
     private int experience;
-    private static boolean toggleSwitch = true;
-    private static int good = 0;
-    private static int evil = 0;
+    protected int initiative;
     private Vector2  position;
     public void attack(Hero hero) {
         if (hero.die(hero.getHealth())){
@@ -102,6 +104,11 @@ public abstract class Hero implements Move {
             toggleSwitch = true;
         return "EVIL";}
     }
+
+    public int getInitiative() {
+        return initiative;
+    }
+
     public String getTeam() {
         return team;
     }
