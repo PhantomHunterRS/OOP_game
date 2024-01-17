@@ -9,16 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sniper extends Archery {
-    private int numberOfArrows;
     public Sniper(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
-        this.numberOfArrows = 15;
-    }
-    public int getNumberOfArrows() {
-        return numberOfArrows;
-    }
-    public void setNumberOfArrows(int replenishNumberOfArrows) {
-        this.numberOfArrows = this.numberOfArrows + replenishNumberOfArrows;
+        this.setNumberOfCrossBowArrows(15);
+        this.initiative = 3;
     }
     @Override
     public void sniperShoot(Hero hero) {
@@ -53,6 +47,11 @@ public class Sniper extends Archery {
     @Override
     public String toString() {
         return super.toString()+ " team - "+ getTeam() + ":\n   Health - " + getHealth() + "\n   Power - " + getPower() + "\n   Defence - " + getDefence() + "\n   Accuracy - " + getAccuracy() +
-                "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n   number Of Arrows - " + getNumberOfArrows()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
+                "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n   number Of Arrows - " + getNumberOfCrossBowArrows()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
+    }
+
+    @Override
+    public void step(Hero hero, List<Hero> allies) {
+        super.step(hero,allies);
     }
 }
