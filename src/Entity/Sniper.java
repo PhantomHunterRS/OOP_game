@@ -1,13 +1,14 @@
 package Entity;
 
-import Abstracts.AccurateShooting;
+
+import Abstracts.Archery;
 import Abstracts.Hero;
 import Abstracts.Vector2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sniper extends Hero implements AccurateShooting {
+public class Sniper extends Archery {
     private int numberOfArrows;
     public Sniper(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);

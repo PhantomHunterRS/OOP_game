@@ -1,5 +1,5 @@
 package Abstracts;
 
-public interface Move {
-    public void move(Vector2 vector);
+public abstract interface Move {
+    public abstract void step(Vector2 vector);
 }

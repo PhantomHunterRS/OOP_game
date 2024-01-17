@@ -3,7 +3,7 @@ package Abstracts;
 /**
 Описание героя и его основных характиристик
  */
-public class Hero implements Actable {
+public abstract class Hero implements Move {
     String name;
     private String team;
     private int health, health_Max;
@@ -18,7 +18,6 @@ public class Hero implements Actable {
     private static int evil = 0;
     private Vector2  position;
 
-    @Override
     public void attack(Hero hero) {
         if (hero.die(hero.getHealth())){
             System.out.println("He's already dead.");
@@ -30,11 +29,10 @@ public class Hero implements Actable {
         }
         System.out.println(hero.die(hero.getHealth())?"dead":"");
     }
-    @Override
+
     public void protect(Hero hero) {
         hero.setDefence(hero.getDefence()+this.getPower()/2);
     }
-    @Override
     public boolean die(int health) {
         if (health <=0 ){
             System.out.println("The hero was killed");
@@ -121,5 +119,8 @@ public class Hero implements Actable {
         }
     }
 
+    @Override
+    public void step(Vector2 vector) {
 
+    }
 }

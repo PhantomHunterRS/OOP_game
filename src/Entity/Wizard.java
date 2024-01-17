@@ -1,10 +1,9 @@
 package Entity;
 
-import Abstracts.Actable;
-import Abstracts.Healing;
 import Abstracts.Hero;
+import Abstracts.Magic;
 
-public class Wizard extends Hero implements Healing {
+public class Wizard extends Magic {
 
     public Wizard(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
