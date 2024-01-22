@@ -1,10 +1,10 @@
 package Entity;
 
 import Abstracts.Hero;
-import Abstracts.Magic;
+import Abstracts.Healer;
 import Abstracts.Vector2;
 
-public class Wizard extends Magic {
+public class Wizard extends Healer {
 
     public Wizard(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
@@ -17,9 +17,6 @@ public class Wizard extends Magic {
     }
     @Override
     public void healing(Hero hero) {
-        int health = this.getPower()+(this.getAccuracy()/10)+(this.getChanceCriticalAttack()/10);
-        hero.setHealth(((hero.getHealth()+health) > hero.getHealth_Max())?hero.getHealth_Max():hero.getHealth()+health);
-    }
     @Override
     public boolean die(int health) {
         if (health <= 0) {
