@@ -1,9 +1,11 @@
 package Abstracts;
 
+import java.util.List;
+
 /**
 Описание героя и его основных характиристик
  */
-public abstract class Hero implements Move {
+public abstract class Hero{
     private static boolean toggleSwitch = true;
     private static int good = 0;
     private static int evil = 0;
@@ -34,13 +36,7 @@ public abstract class Hero implements Move {
         hero.setDefence(hero.getDefence() + this.getPower() / 2);
     }
     public boolean die(int health) {
-        if (health <=0 ){
-            System.out.println("The hero was killed");
-            return true;
-        }
-        else{
-            return false;
-        }
+            return (health <=0 )?true:false;
     }
     @Override
     public String toString(){
@@ -123,10 +119,40 @@ public abstract class Hero implements Move {
             return new Vector2(9,evil++);
         }
     }
+    public void step(Hero hero, List<Hero> allies) {
+       if (((this.getPosition().getPosX() == hero.getPosition().getPosX())&&
+               (this.getPosition().getPosY()+1 == hero.getPosition().getPosY() || this.getPosition().getPosY()-1 == hero.getPosition().getPosY())) ||
+               ((this.getPosition().getPosY()) == hero.getPosition().getPosY() &&
+                       ((this.getPosition().getPosX()+1 == hero.getPosition().getPosX() ) || (this.getPosition().getPosX()-1 == hero.getPosition().getPosX())))){
+           this.attack(hero);
+       }else{
+           //new position move
+           int newPosX = this.getPosition().getPosX()+((hero.getPosition().getPosX() - this.getPosition().getPosX())/(Math.abs((hero.getPosition().getPosX() - this.getPosition().getPosX()))));
+           int newPosY = this.getPosition().getPosY()+((hero.getPosition().getPosY() - this.getPosition().getPosY())/(Math.abs((hero.getPosition().getPosY() - this.getPosition().getPosY()))));
 
-
-    @Override
-    public void step(Vector2 vector) {
-
+           if ((hero.getPosition().getPosX() - this.getPosition().getPosX())>(hero.getPosition().getPosY() - this.getPosition().getPosY())){
+               if (cageIsOccupied(new Vector2(newPosX,this.getPosition().getPosY()),allies)){
+                   this.getPosition().setPosY(newPosY);
+               }else {
+                   this.getPosition().setPosX(newPosX);
+               }
+           }else {
+               if (cageIsOccupied(new Vector2(this.getPosition().getPosX(),newPosY),allies)){
+                   this.getPosition().setPosX(newPosX);
+               }else {
+                   this.getPosition().setPosY(newPosY);
+               }
+           }
+       }
+    }
+    //checking whether the cell is occupied by an ally
+    public boolean cageIsOccupied(Vector2 vector, List<Hero> allies){
+        boolean occupied = false;
+        for (Hero hero:allies) {
+            if (vector.equals(hero.getPosition())){
+                occupied = true;
+            }
+        }
+        return occupied;
     }
 }

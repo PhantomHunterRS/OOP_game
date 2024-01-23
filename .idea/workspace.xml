@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69c701c8-8331-4cd3-9f11-8f897b3b72dc" name="Changes" comment="in process 2.2">
-      <change afterPath="$PROJECT_DIR$/src/Abstracts/Healer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Abstracts/Magic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Archery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Archery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Healer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Healer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Move.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Vector2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Vector2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Crossbowman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Crossbowman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Peasant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sniper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Spearman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Spearman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Wizard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +107,7 @@
       <workItem from="1705516948129" duration="3353000" />
       <workItem from="1705768311884" duration="656000" />
       <workItem from="1705944596208" duration="2141000" />
+      <workItem from="1706035587476" duration="7899000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1703448812785</created>

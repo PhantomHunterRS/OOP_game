@@ -4,6 +4,9 @@ import Abstracts.CarryingAWeapons;
 import Abstracts.Hero;
 import Abstracts.Vector2;
 
+import java.sql.SQLOutput;
+import java.util.List;
+
 public class Peasant extends Hero implements CarryingAWeapons {
 
     public Peasant(String name, int health_Max) {
@@ -13,9 +16,9 @@ public class Peasant extends Hero implements CarryingAWeapons {
     @Override
     public void replenishTheShells(Hero hero) {
         if (hero instanceof Sniper){
-            ((Sniper) hero).setNumberOfArrows(5);
+            ((Sniper) hero).setNumberOfCrossBowArrows(2);
         } else if (hero instanceof Crossbowman) {
-            ((Crossbowman) hero).setNumberOfCrossBowArrows(5);
+            ((Crossbowman) hero).setNumberOfCrossBowArrows(2);
         }
     }
     @Override
@@ -25,7 +28,7 @@ public class Peasant extends Hero implements CarryingAWeapons {
     }
 
     @Override
-    public void step(Vector2 vector) {
-        super.step(vector);
+    public void step(Hero hero, List<Hero> allies){
+        System.out.println("No move");
     }
 }

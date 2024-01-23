@@ -4,6 +4,8 @@ import Abstracts.Hero;
 import Abstracts.Healer;
 import Abstracts.Vector2;
 
+import java.util.List;
+
 public class Wizard extends Healer {
 
     public Wizard(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
@@ -16,8 +18,6 @@ public class Wizard extends Healer {
                 "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
     }
     @Override
-    public void healing(Hero hero) {
-    @Override
     public boolean die(int health) {
         if (health <= 0) {
             System.out.println("The hero crumbled into stardust");
@@ -28,7 +28,7 @@ public class Wizard extends Healer {
     }
 
     @Override
-    public void step(Vector2 vector) {
-        super.step(vector);
+    public void step(Hero hero, List<Hero> allies) {
+        super.step(hero,allies);
     }
 }
