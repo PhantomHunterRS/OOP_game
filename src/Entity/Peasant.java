@@ -4,6 +4,9 @@ import Abstracts.CarryingAWeapons;
 import Abstracts.Hero;
 import Abstracts.Vector2;
 
+import java.sql.SQLOutput;
+import java.util.List;
+
 public class Peasant extends Hero implements CarryingAWeapons {
 
     public Peasant(String name, int health_Max) {
@@ -24,4 +27,8 @@ public class Peasant extends Hero implements CarryingAWeapons {
                 "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
     }
 
+    @Override
+    public void step(Hero hero, List<Hero> allies){
+        System.out.println("No move");
+    }
 }
