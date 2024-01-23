@@ -25,4 +25,8 @@ public class Vector2 {
     public int distance (Vector2 vectorEnd){
         return (Math.abs(vectorEnd.getPosX() - this.getPosX()))+ (Math.abs(vectorEnd.getPosY() - this.getPosY()));
     }
+    public boolean equals(Vector2 vector){
+        return (this.posX == vector.getPosX() && (this.posY == vector.getPosY()))?true:false;
+    }
+
 }

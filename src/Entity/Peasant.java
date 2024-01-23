@@ -13,9 +13,9 @@ public class Peasant extends Hero implements CarryingAWeapons {
     @Override
     public void replenishTheShells(Hero hero) {
         if (hero instanceof Sniper){
-            ((Sniper) hero).setNumberOfArrows(5);
+            ((Sniper) hero).setNumberOfCrossBowArrows(2);
         } else if (hero instanceof Crossbowman) {
-            ((Crossbowman) hero).setNumberOfCrossBowArrows(5);
+            ((Crossbowman) hero).setNumberOfCrossBowArrows(2);
         }
     }
     @Override
@@ -24,8 +24,4 @@ public class Peasant extends Hero implements CarryingAWeapons {
                 "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
     }
 
-    @Override
-    public void step(Vector2 vector) {
-        super.step(vector);
-    }
 }
