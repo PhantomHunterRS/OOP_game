@@ -1,31 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="69c701c8-8331-4cd3-9f11-8f897b3b72dc" name="Changes" comment="" />
+    <list default="true" id="69c701c8-8331-4cd3-9f11-8f897b3b72dc" name="Changes" comment="in process 5.1">
+      <change afterPath="$PROJECT_DIR$/src/Abstracts/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Archery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Archery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Abstracts/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Abstracts/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Crossbowman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Crossbowman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Monk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Monk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Peasant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Peasant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Rogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Rogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Sniper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Sniper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="work2" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="in process 2&#10;&#10;in process 1" />
+        <option name="rewordedMessage" value="in process 1.2" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="89807da1b67b91ffb4a6d52d4b7ddd09903adee7" />
+  </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SCOPE" value="Tests" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2a0Hkt4EA1p2OHnZLfXokesTvof" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="OOP_game" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,7 +103,131 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703448724411</updated>
+      <workItem from="1703448725588" duration="956000" />
+      <workItem from="1704561183527" duration="4724000" />
+      <workItem from="1704654962451" duration="10299000" />
+      <workItem from="1705516948129" duration="3353000" />
+      <workItem from="1705768311884" duration="656000" />
+      <workItem from="1705944596208" duration="2141000" />
+      <workItem from="1706035587476" duration="8823000" />
+      <workItem from="1706548325348" duration="5248000" />
     </task>
+    <task id="LOCAL-00001" summary="start">
+      <created>1703448812785</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703448812785</updated>
+    </task>
+    <task id="LOCAL-00002" summary="start">
+      <created>1703448880505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703448880505</updated>
+    </task>
+    <task id="LOCAL-00003" summary="in process 1">
+      <created>1703448995522</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703448995522</updated>
+    </task>
+    <task id="LOCAL-00004" summary="in process 2">
+      <created>1704562716095</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704562716095</updated>
+    </task>
+    <task id="LOCAL-00005" summary="in process 2">
+      <created>1704661903872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704661903872</updated>
+    </task>
+    <task id="LOCAL-00006" summary="in process 2.1">
+      <created>1705519272894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705519272894</updated>
+    </task>
+    <task id="LOCAL-00007" summary="in process 2.2">
+      <created>1705519538342</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705519538342</updated>
+    </task>
+    <task id="LOCAL-00008" summary="in process 4">
+      <created>1706044732640</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1706044732640</updated>
+    </task>
+    <task id="LOCAL-00009" summary="in process 4.1">
+      <created>1706044980821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706044980821</updated>
+    </task>
+    <task id="LOCAL-00010" summary="in process 5">
+      <created>1706045305259</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706045305259</updated>
+    </task>
+    <task id="LOCAL-00011" summary="in process 5.1">
+      <created>1706045534870</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706045534870</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="start" />
+    <MESSAGE value="in process 1" />
+    <MESSAGE value="in process 2" />
+    <MESSAGE value="in process 2.1" />
+    <MESSAGE value="in process 2.2" />
+    <MESSAGE value="in process 4" />
+    <MESSAGE value="in process 4.1" />
+    <MESSAGE value="in process 5" />
+    <MESSAGE value="in process 5.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="in process 5.1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Abstracts/Hero.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
