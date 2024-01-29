@@ -10,6 +10,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        List<Hero> holyTeam = new ArrayList<>();
+        List<Hero> darkTeam = new ArrayList<>();
+
         List<Hero> heroes = new ArrayList<>();
         Hero hero1 = new Wizard("Alexey",150,15,20,75,150,50);
         System.out.println(hero1.toString());
@@ -21,14 +24,11 @@ public class Main {
         System.out.println(hero4.toString());
         Hero hero5 = new Sniper("Hunter",100,150,70,50,300,150);
         System.out.println(hero5.toString());
-        System.out.println(((Sniper)hero5).getNumberOfArrows());
+        System.out.println(((Sniper)hero5).getNumberOfCrossBowArrows());
         ((Peasant)hero4).replenishTheShells(hero5);
-        System.out.println(((Sniper)hero5).getNumberOfArrows());
+        System.out.println(((Sniper)hero5).getNumberOfCrossBowArrows());
 
-        Vector2 vector2 = new Vector2(5,0);
-        Vector2 vector3 = new Vector2(1,6);
 
-        System.out.println(vector2.distance(vector3));
         heroes.add(hero1);
         heroes.add(hero2);
         heroes.add(hero3);

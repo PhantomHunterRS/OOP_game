@@ -1,11 +1,13 @@
 package Entity;
 
 import Abstracts.Hero;
+import Abstracts.Move;
 import Abstracts.Vector2;
+
 
 import java.util.List;
 
-public class Rogue extends Hero {
+public class Rogue extends Hero implements Move {
     public Rogue(String name, int health_Max, int power, int defence, int accuracy, int chanceCriticalAttack, int evasionAttack) {
         super(name, health_Max, power, defence, accuracy, chanceCriticalAttack, evasionAttack);
         this.initiative = 2;
@@ -22,7 +24,12 @@ public class Rogue extends Hero {
     }
 
     @Override
-    public void step(Hero hero, List<Hero> allies) {
-        super.step(hero,allies);
+    public void step(Hero hero, Hero enemy, List<Hero> allies) {
+        Move.super.step(hero, enemy, allies);
     }
+    @Override
+    public boolean cageIsOccupied(Vector2 vector, List<Hero> allies) {
+        return Move.super.cageIsOccupied(vector, allies);
+    }
+
 }

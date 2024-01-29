@@ -2,6 +2,8 @@ package Entity;
 
 import Abstracts.Archery;
 import Abstracts.Hero;
+import Abstracts.Move;
+import Abstracts.Vector2;
 
 import java.util.List;
 
@@ -17,8 +19,6 @@ public class Crossbowman extends Archery {
         return super.toString()+ " team - "+ getTeam() + ":\n   Health - " + getHealth() + "\n   Power - " + getPower() + "\n   Defence - " + getDefence() + "\n   Accuracy - " + getAccuracy() +
                 "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+ "\n number Of CrossBow Arrows - " + getNumberOfCrossBowArrows() +"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
     }
-    @Override
-    public void step(Hero hero, List<Hero> allies) {
-        super.step(hero,allies);
-    }
+
+
 }

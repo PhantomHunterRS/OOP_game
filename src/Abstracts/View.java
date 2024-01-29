@@ -1,6 +1,5 @@
 package Abstracts;
 
-import org.example.units.BaseHero;
 import java.util.Collections;
 
 public class View {
@@ -27,7 +26,7 @@ public class View {
     }
     private static String getChar(int x, int y){
         String out = "| ";
-        for (BaseHero human: Main.allTeam) {
+        for (Hero human: Main.allTeam) {
             if (human.getCoords()[0] == x && human.getCoords()[1] == y){
                 if (human.getHp() == 0) {
                     out = "|" + (AnsiColors.ANSI_RED + human.getInfo().charAt(0) + AnsiColors.ANSI_RESET);

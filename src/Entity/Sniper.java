@@ -50,8 +50,4 @@ public class Sniper extends Archery {
                 "\n   Chance Critical Attack - " + getChanceCriticalAttack() + "\n   Evasion attack - " + getEvasionAttack()+"\n   number Of Arrows - " + getNumberOfCrossBowArrows()+"\n position ("+ getPosition().getPosX() + ","+ getPosition().getPosY() + ")";
     }
 
-    @Override
-    public void step(Hero hero, List<Hero> allies) {
-        super.step(hero,allies);
-    }
 }

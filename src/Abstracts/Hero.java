@@ -1,5 +1,7 @@
 package Abstracts;
 
+import Entity.Rogue;
+
 import java.util.List;
 
 /**
@@ -118,41 +120,5 @@ public abstract class Hero{
         }else {
             return new Vector2(9,evil++);
         }
-    }
-    public void step(Hero hero, List<Hero> allies) {
-       if (((this.getPosition().getPosX() == hero.getPosition().getPosX())&&
-               (this.getPosition().getPosY()+1 == hero.getPosition().getPosY() || this.getPosition().getPosY()-1 == hero.getPosition().getPosY())) ||
-               ((this.getPosition().getPosY()) == hero.getPosition().getPosY() &&
-                       ((this.getPosition().getPosX()+1 == hero.getPosition().getPosX() ) || (this.getPosition().getPosX()-1 == hero.getPosition().getPosX())))){
-           this.attack(hero);
-       }else{
-           //new position move
-           int newPosX = this.getPosition().getPosX()+((hero.getPosition().getPosX() - this.getPosition().getPosX())/(Math.abs((hero.getPosition().getPosX() - this.getPosition().getPosX()))));
-           int newPosY = this.getPosition().getPosY()+((hero.getPosition().getPosY() - this.getPosition().getPosY())/(Math.abs((hero.getPosition().getPosY() - this.getPosition().getPosY()))));
-
-           if ((hero.getPosition().getPosX() - this.getPosition().getPosX())>(hero.getPosition().getPosY() - this.getPosition().getPosY())){
-               if (cageIsOccupied(new Vector2(newPosX,this.getPosition().getPosY()),allies)){
-                   this.getPosition().setPosY(newPosY);
-               }else {
-                   this.getPosition().setPosX(newPosX);
-               }
-           }else {
-               if (cageIsOccupied(new Vector2(this.getPosition().getPosX(),newPosY),allies)){
-                   this.getPosition().setPosX(newPosX);
-               }else {
-                   this.getPosition().setPosY(newPosY);
-               }
-           }
-       }
-    }
-    //checking whether the cell is occupied by an ally
-    public boolean cageIsOccupied(Vector2 vector, List<Hero> allies){
-        boolean occupied = false;
-        for (Hero hero:allies) {
-            if (vector.equals(hero.getPosition())){
-                occupied = true;
-            }
-        }
-        return occupied;
     }
 }
